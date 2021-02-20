@@ -20,10 +20,61 @@
   <link href="css/style.css" rel="stylesheet"> 
 
 
+                             <!-- HEADER FILES -->
+                      <div class="header" id="myHeader">
+                          <header class="main-header"; class="header">
+                                            <a href="index.html"class="brand-logo">
+                                                  <img src="imaes/logo.PNG">
+                                                  <div class="brand-logo-name">JoRac Hotel</div>
+                                                </a>
+                                              
+
+                                            <!-- Main Stylesheet File -->
+                                                 <!--  <link href="css/style.css" rel="stylesheet"> -->
+                                                  <body id="page-top">
+                                                        <nav class="main-nav"; style="float: left"; margin ="20">
+
+                                                        <ul>
+                                                            <li><a href="index.html">Home</a><li>
+                                                            <li><a href="Meals.html">Meals</a></li>
+                                                            <li><a href="accommodation.html">Accommodation</a></li>
+                                                            <li><a href="conference.html">Conferencing</a></li>
+                                                           <li><a href="#Other_Services" target="_blank">Contact Us</a><li>
+                                                          
+                                                        </ul>
+
+                                                    </nav>
+                                                  
+                                        </header>
+
+
+                                  <script>
+                                        window.onscroll = function() {myFunction()};
+
+                                        var header = document.getElementById("myHeader");
+                                        var sticky = header.offsetTop;
+
+                                        function myFunction() {
+                                          if (window.pageYOffset > sticky) {
+                                            header.classList.add("sticky");
+                                          } else {
+                                            header.classList.remove("sticky");
+                                                  }
+                                                }
+                                                </script>
+                          </div>
+
+                                
+
+
+
+
 <!-- IN TEXT STYLING, TO BE EXPORTED TO THE MAIN CSS FILE -->
 
 <style>
 
+
+/*Body Master */
 #body{
   /*border: 2px solid black; */
   padding: 25px;
@@ -33,7 +84,38 @@
   border-radius: .75rem;
   margin-left: 20px;
   margin-right: 20px;
+
+  /*margin-left: 20px;
+  margin-right: 20px; */
 }
+
+
+#wrapper{
+  background-position: fixed;
+}
+
+.body{
+  /*border: 2px solid black; */
+  padding: 25px;
+  background:   #cdc6d2; /*#b4a9bc; /*#DFF2DE;*/
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: .75rem;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  /*margin-left: 20px;
+  margin-right: 20px; */
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
 
 .w3-container{
   text-decoration color: green;
@@ -59,6 +141,9 @@
   /*max-width:auto;*/
 }
 
+.inputform{
+
+}
 .mapouter{
   margin-bottom: 20px;
 }
@@ -75,6 +160,8 @@
   margin-left: 50px;
 }
 
+/* FORM */
+
 .contactform{
   float: right;
   padding-right: 10rem;
@@ -88,6 +175,13 @@
   /*max-width: 50%; */
   padding: 2rem 4rem;
   border-radius: 20px;
+  float: right; 
+  height:50%;
+  clear: right;
+
+  /* offset right */
+  margin-right: 140px;
+  /*margin-right: 20px; */
 }
 
 .input-group {
@@ -120,11 +214,12 @@
 }
 
 .quickLink{
-  float: right;
+  float: left;
   clear: left;
   width: 20vw; 
+  flex-grow: 
   border-color: #596da0;
-  padding-right: 10px;
+  padding-right: 100px;
   background-color: #202027;
   width: 50vw; 
   max-width: 50%;
@@ -133,6 +228,10 @@
   height:50%;
 }
 
+.offset{
+  border-radius: 20px;
+  height:50%;
+}
 
 .social ul {
   display: flex;
@@ -154,34 +253,42 @@
   color: #adadad;
 }
 
+
+
 .social-bar{
   align-content: center;
   padding: 50px;
   margin-left: 80px;
+  float: right;
+  margin-right: 20px;
 }
 
 .h2{
   text-decoration-color: green;
 }
 
-.maps{
-  width:1400px;
-  border-color: #596da0;
-  max-width: 100%;
-  padding: 2rem 4rem;
-  border-radius: 20px;
-  height:50%;
 
-}
+
 /*testing */
 
 /* "Imaes/fantasy.webp"*/
 .wrapper { 
             overflow: hidden; 
+              /*background-color: #b3ffe0;*/
+            border border-radius: 50%;
+            background-size: contain;
+            border-radius: .75rem; 
+           /* border: 1px solid #2E3852;*/
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
+            width:1400px;
+            align-self: center;
         } 
   
         .sliding-background { 
             background: url( "Images/side1.jpeg"
+
               
                    )  
         
@@ -326,13 +433,21 @@ img {vertical-align: middle;}
   opacity: 1;
 }
 
-.tandem{
+.tadem{
   background-color: #717171;
+  text-decoration-color: #1C9416;
+  font-weight: bold;
+  align-self: center;
+  text-align: center;
+  border-radius: .75rem;
+  margin-left: 50px;
+  margin-right: 220px;
+  border: 1px solid #2E3852;
 }
 
 .maps{
   padding: 20px;
-  align-self: center;
+  /*align-self: center;*/
 }
 
 .formatSection{
@@ -343,123 +458,241 @@ img {vertical-align: middle;}
 .genText{
   background-color: #b3ffe0;
   border border-radius: 50%;
+  background-size: contain;
+  border-radius: .75rem;
+  border: 1px solid #2E3852;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-left: 20px;
+  width:1400px;
+  align-self: center;
+  max-width:100%;
+  height:auto;
 }
+
+
+.genText1{
+  /*background-color: #b3ffe0;*/
+  border border-radius: 50%;
+  background-size: contain;
+  border-radius: .75rem; 
+ /* border: 1px solid #2E3852;*/
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  width:1400px;
+  align-self: center;
+}
+
+
+
+/*    Map Condfigures */
+.mapouter{
+position:relative;
+text-align:right;
+height:450px;
+width:1280px; 
+margin-top: 5px;
+}
+
+.gmap_canvas {
+overflow:hidden;
+background:none!important;
+height:450px;
+width:1280px; 
+/*align-self: center; */
+border: 1px solid #2E3852;
+border-radius: .75rem;
+margin-right: 10px;
+}
+
+.maps{
+  /*border: 2px solid black; */
+  padding: 25px;
+  background:   #cdc6d2; /*#b4a9bc; /*#DFF2DE;*/
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: .75rem;
+  border: 1px solid #2E3852;
+  margin-left: 20px;
+  margin-right: 20px; 
+  margin-top: 10px;
+}
+
+
+/*Socials
+*/
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
 
 </style>
 
 
-<!-- END OF STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-
-
-<!-- HEADER FILES -->
-
-<header class="main-header"; class="header">
-                  <a href="index.html"class="brand-logo">
-                        <img src="imaes/logo.PNG">
-                        <div class="brand-logo-name">JoRac Hotel</div>
-                      </a>
-                    
-
-                  <!-- Main Stylesheet File -->
-                       <!--  <link href="css/style.css" rel="stylesheet"> -->
-                        <body id="page-top">
-                              <nav class="main-nav"; style="float: left"; margin ="20">
-
-                              <ul>
-                                  <li><a href="index.html">Home</a><li>
-                                  <li><a href="Meals.html">Meals</a></li>
-                                  <li><a href="accommodation.html">Accommodation</a></li>
-                                  <li><a href="conference.html">Conference Centre</a></li>
-                                 <li><a href="contacts.html">Contact Us</a><li>
-                              </ul>
-
-                        </nav>
-              </header>
-      
-<!-- Body 
-
+<!-- END OF STYLES +++++++++++++++++++++++++++++++++ <div class="body"> ++++++++++++++++++++ -->
 <body>
-       
+              <div id="body">  
+           
 
-  <!-- Sidebar   style="width:25%" --
+                          <!-- HEADER FILES --/* */
 
-  
-<div class="Contact">
-  <h3 Book a Space With Us</h3>
-  <a href="#" class="w3-bar-item w3-button">Facebook</a>
-  <a href="#" class="w3-bar-item w3-button">Twitter</a>
-  <a href="#" class="w3-bar-item w3-button">Instagram</a>
-</div>
--->
+                          <header class="main-header"; class="header">
+                                            <a href="index.html"class="brand-logo">
+                                                  <img src="imaes/logo.PNG">
+                                                  <div class="brand-logo-name">JoRac Hotel</div>
+                                                </a>
+                                              
 
-<!-- -===================================== -->
-<body>
+                                            <!-- Main Stylesheet File --
+                                                 <!--  <link href="css/style.css" rel="stylesheet"> --
+                                                  <body id="page-top">
+                                                        <nav class="main-nav"; style="float: left"; margin ="20">
 
-  <div id="body">
+                                                        <ul>
+                                                            <li><a href="index.html">Home</a><li>
+                                                            <li><a href="Meals.html">Meals</a></li>
+                                                            <li><a href="accommodation.html">Accommodation</a></li>
+                                                            <li><a href="conference.html">Conference Centre</a></li>
+                                                           <li><a href="contacts.html">Contact Us</a><li>
+                                                        </ul>
 
-      <!--    Welcome Page 
-
-        <div id="home" class="w3-content" style="width:200%">
-          <div class="w3-container w3-teal">
-            <h1>Welcome to JoRac Hotel</h1>
-          </div> -->
-
-
-<!-- ================================================ -->
-
-
-      <div class="wrapper"> 
-        <div class="sliding-background"></div> 
-    </div> 
-
-
-
-<!-- SERVICES LAYOUT LIKE 3 COLUMNS DESCRIBING THE HOTEL PROVISIONS And dESCRIPTION OF hOTEL-->
-
-				<div id="home" class="w3-content">
-                  <div class="genText">
-
-                      <div class="w3-container w3-center">
-                                      <p>Located at the Shoulders of the busy Highway, JoRac Hotels boasts of hosting various visitors from across regions in Kenya. The modern building benefited from sound  architectural designs as the rooms are quiet, despite the proximity of the hotel to the highway. Quality and delicious foods, both local and exotic recipes are the flowers that keep our visitors coming back
-                                       </p>
+                                                    </nav>
+                                                  
+                                        </header>
                                 
-                               </div>
+
+
+                                 
+
+                            <!-- Sidebar   style="width:25%" --
+  --
+                            <div class="social-bar" >
+
+
+
+                          <div class="Contact">
+                            <h3 Book a Space With Us</h3>
+                            <a href="Images/teerIcon.svg" class="w3-bar-item w3-button">Facebook</a>
+                            <a href="#" class="w3-bar-item w3-button">Twitter</a>
+                            <a href="#" class="w3-bar-item w3-button">Instagram</a>
                           </div>
+                        -->
+
+                          <!-- -===================================== 
+                          <body>
+                          -->
+
+                                <!--    Welcome Page 
+
+                                  <div id="home" class="w3-content" style="width:200%">
+                                    <div class="w3-container w3-teal">
+                                      <h1>Welcome to JoRac Hotel</h1>
+                                    </div> -->
 
 
-            <!--Services offered-->
-            <div id="members" class="w3-container w3-padding-32">
-                        <h2 class="w3-center">Exclusive Services</h2>
-                              <div class="w3-row w3-left">
+                                                   
 
-                                          <div class="w3-third">
-                                                      <h3 class="w3-center">Conference Centre</h3>
-                                                        <img src="Images/conf1.jpeg" alt="Conference Centre" style="width:70%" width="500" height="320" class="center">
-                                                          <p>
-                                                            As many of our customers have requested, we have introduced a fully equipped modern conference Centre. Teachers planning for special meetings will find this place quite cool and official to hold their meetings. We also offer Video conferencing services on request from customers. 
-                                                          </p>
-                                                  </div>
 
-                                          <div class="w3-third">
-                                                <h3 class="w3-center">Accommodation</h3>
-                                                        <img src="Images/room12.jpeg" alt="Hotel Rooms" style="width:70%" style="height=10" width="480" height="350" class="center">
 
-                                                          <p>
-                                                            We have various Classes of rooms. However, all of them are kept at top-notch hygiene. They are usually clean, with hot showers and quality service from the tenderers. You better check availability before paying a visit. 
-                                                          </p>
-                                                     </div>
+ <!-- ============================================================================================================================================================================== -->
+                                        
+                                        <!--  <div class="social-bar2">
+                                                          <nav class="social-bar2">
+                                                                      <ul>
+                                                                          <li>
+                                                                            <a href="https://twitter.com/daudimush1" class="social-link">
+                                                                              <img src="images/twt.png" width="50" height="60">
+                                                                            </a>
+                                                                              </li>
+                                                                          <li>
+                                                                            <a href="https://web.facebook.com/?_rdc=1&_rdr" class="social-link">
+                                                                              <img src="images/fb1.png" width="50" height="60">
+                                                                              </a>
+                                                                              </li>
+                                                                          <li>
+                                                                            <a href="https://www.linkedin.com/in/kiura-muchangi" class="social-link">
+                                                                              <img src="images/inst.png" width="50" height="60">
+                                                                              
+                                                                            </a>
+                                                                           </li>
+                                                                </ul>
+                                                              </nav>
+                                                  
+                                       </div>
+-->
+                        
+                        <div class="wrapper" style="max-width:100%; height:auto;"> 
+                                  <div class="sliding-background" >
 
-                                          <div class="w3-third">
-                                                          <h3 class="w3-center">Drinks</h3>
-                                                            <img src="Imaes/juice.jpg" alt="Name3" style="width:80%" style="float: right" width="480" height="350" class="center">
+                                  </div> 
+                              </div> 
 
-                                                              <p>
-                                                                Being a Semi-Arid region, temperatures soar to even 30 degrees Celcius. This facilitates the ripening and sweetening of the fruits grown in the region. We use these fruits to serve our customers the best juices from various fruits. Why not try our cocktail?
-                                                              </p>
-                                                       </div>
 
-                                    </div>
-                            </div>
+
+                          <!-- SERVICES LAYOUT LIKE 3 COLUMNS DESCRIBING THE HOTEL PROVISIONS And dESCRIPTION OF hOTEL-->
+                       <div class="w3-content">
+
+                          				<!-- <div id="home" class="w3-content"> -->
+                                            <div class="genText">
+
+                                                <div class="w3-container w3-center">
+                                                                <p>Located at the Shoulders of the busy Highway, JoRac Hotels boasts of hosting various visitors from across regions in Kenya. The modern building benefited from sound  architectural designs as the rooms are quiet, despite the proximity of the hotel to the highway. Quality and delicious foods, both local and exotic recipes are the flowers that keep our visitors coming back
+                                                                 </p>
+                                                          
+                                                         </div>
+                                                    </div>
+
+
+<!--Services offered ===============================================================================================================================================================-->
+
+              <div class="genText1">
+                  <div id="members" class="w3-container w3-padding-32">
+                              <h2 class="w3-center">Exclusive Services</h2>
+                                    <div class="w3-row w3-left">
+
+                                                <div class="w3-third">
+                                                            <h3 class="w3-center">Conference Centre</h3>
+                                                              <img src="Images/conf1.jpeg" alt="Conference Centre" style="width:70%" width="500" height="320" class="center">
+                                                                <p>
+                                                                  As many of our customers have requested, we have introduced a fully equipped modern conference Centre. Teachers planning for special meetings will find this place quite cool and official to hold their meetings. We also offer Video conferencing services on request from customers. 
+                                                                </p>
+                                                        </div>
+
+                                                <div class="w3-third">
+                                                      <h3 class="w3-center">Accommodation</h3>
+                                                              <img src="Images/room12.jpeg" alt="Hotel Rooms" style="width:70%" style="height=10" width="480" height="350" class="center">
+
+                                                                <p>
+                                                                  We have various Classes of rooms. However, all of them are kept at top-notch hygiene. They are usually clean, with hot showers and quality service from the tenderers. You better check availability before paying a visit. 
+                                                                </p>
+                                                           </div>
+
+                                                <div class="w3-third">
+                                                                <h3 class="w3-center">Drinks</h3>
+                                                                  <img src="Imaes/juice.jpg" alt="Name3" style="width:80%" style="float: right" width="480" height="350" class="center">
+
+                                                                    <p>
+                                                                      Being a Semi-Arid region, temperatures soar to even 30 degrees Celcius. This facilitates the ripening and sweetening of the fruits grown in the region. We use these fruits to serve our customers the best juices from various fruits. Why not try our cocktail?
+                                                                    </p>
+                                                             </div>
+
+                                          </div>
+                                  </div>
+                          </div>
 
 
         <!--	<img src="Imaes/apple.jpg" alt="LA" style="width:100%">   -->
@@ -478,11 +711,12 @@ img {vertical-align: middle;}
                   </div>
 
 <!--Additional Services-->
-          
-            <div id="members" class="w3-container w3-padding-32">
-                  <h2 class="w3-center">Other Services</h2>
-                        <div class="w3-row w3-left">
 
+        <div class="genText1"  style="max-width:100%; height:auto;"> 
+            <div id="members" class="w3-container w3-padding-32">
+             
+                  <h2 id="Other_Services" class="w3-center">Other Services</h2>
+                        <div class="w3-row w3-left">
                                   <div class="w3-third">
                                           <h3 class="w3-center">Lunch</h3>
                                             <img src="Images/bhajia.jpeg" alt="Bhajia for Lunch" style="width:70%"width="620" height="350" class="center">
@@ -512,66 +746,68 @@ img {vertical-align: middle;}
 
                                </div>
                         </div>
+                  </div> 
 
   <!-- Contact Section -->
-  <div class="formatSection">
+  <div class="formatSection"  style="max-width:100%; height:auto;">
 
       <h1 class="w3-center">Contact Us</h1>
 
-                              <div class="w3-container w3-content w3-padding-64">
+                              <div class="w3-container w3-content w3-padding-2">
                                     
                                       <p class="w3-opacity w3-center" style="font-size: 1.75em"><i>Visiting Kiritiri? Drop a Reservation with us!</i></p>
                                       
                                                 <div class="quickLink">
-                                                        <div> 
+                                                        <div class="detail"  style="max-width:100%; height:auto;"> 
                                                             <ul>Physical Location: Kiritiri, along Embu-Kivaa Road</ul> 
                                                             <ul>Contact Line:   +254 722 616 771</ul>
                                                             <ul>E-mail:         jorachospitalitycentre@gmail.com</ul> 
 
-                                                        </div>
+                                                        </div> <br> <br> <br> <br> 
 
-                                                    <div class="tadem">
+                                                             <div class="tadem"  style="max-width:100%; height:auto;">
 
-                                                          <h2 class="h2">Follow us on our Social Platforms</h2> 
+                                                                  <h2 class="w3-padding-5">Follow us</h2> 
 
-                                                    </div>
+                                                            </div>
+                                                            <div class="detail"  style="max-width:100%; height:auto;">
+                                                                  <ul>Facebook:       JoRac Hotel Kiritiri</ul> 
+                                                                  <ul>Twitter:        @thejorachotel</ul> 
+                                                                  <ul>Instagram:      Jorac_Hotel_12_@Kiritiri</ul> 
+                                                                </div>
 
-                                                          <ul>Facebook:       JoRac Hotel Kiritiri</ul> 
-                                                          <ul>Twitter:        @thejorachotel</ul> 
-                                                          <ul>Instagram:      Jorac_Hotel_12_@Kiritiri</ul> 
+<!--
+                                                         <div class="social-bar" >
 
-                                                 <div class="social-bar">
-
-                                                        <nav class="social">
-                                                              <ul>
-                                                                  <li>
-                                                                    <a href="https://twitter.com/daudimush1" class="social-link">
-                                                                      <img src="images/twt.png" width="50" height="60">
-                                                                      
-                                                                    </a>
-                                                                  </li>
-                                                                  <li>
-                                                                    <a href="https://web.facebook.com/?_rdc=1&_rdr" class="social-link">
-                                                                      <img src="images/fb1.png" width="50" height="60">
-                                                                      
-                                                                    </a>
-                                                                  </li>
-                                                                   <li>
-                                                                    <a href="https://www.linkedin.com/in/kiura-muchangi" class="social-link">
-                                                                      <img src="images/inst.png" width="50" height="60">
-                                                                      
-                                                                    </a>
-                                                                  </li>
+                                                                <nav class="social">
+                                                                      <ul>
+                                                                          <li>
+                                                                            <a href="https://twitter.com/daudimush1" class="social-link">
+                                                                              <img src="images/twt.png" width="50" height="60">
+                                                                            </a>
+                                                                              </li>
+                                                                          <li>
+                                                                            <a href="https://web.facebook.com/?_rdc=1&_rdr" class="social-link">
+                                                                              <img src="images/fb1.png" width="50" height="60">
+                                                                              </a>
+                                                                              </li>
+                                                                          <li>
+                                                                            <a href="https://www.linkedin.com/in/kiura-muchangi" class="social-link">
+                                                                              <img src="images/inst.png" width="50" height="60">
+                                                                              
+                                                                            </a>
+                                                                           </li>
                                                                 </ul>
                                                               </nav>
                                                    </div>
+                                                 -->
 
                                             </div>
 
 
-
+                                        <div class="offset" >
                                             <div class="w3-col m6">
-                                                <form method= "post" enctype="text" action="mailto:kiuradavis@gmail.com" class="join-form" > <!--ecmbogo@gmail.com -->
+                                                <form method= "post" enctype="text" action="mailto:kiuradavis@gmail.com" class="join-form"> <!--ecmbogo@gmail.com -->
                                                             <div class="input-group">
                                                               <label>Name:</label>
                                                               <input type="text">
@@ -593,43 +829,43 @@ img {vertical-align: middle;}
                                                             </div>
                                                   </form>
                                       </div>
+                                  </div>
                         </div>
                   </div>
 
 <!-- Map co-ordinates -->
+              <div class="maps"  style="max-width:100%; height:auto;">
+                    <h1 class="w3-center">Our Location</h1>
+                                          <!-- <div class="maps"> -->
 
-      <h1 class="w3-center">Our Location</h1>
-                            <div class="maps">
+                                        <div class="mapouter"  style="max-width:100%; height:auto;">
+                                          <div class="gmap_canvas"  style="max-width:100%; height:auto;">
+                                            <iframe width="1280" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=the%20jorac%20hotel&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder        ="0" scrolling="no" marginheight="0" marginwidth="0">
+                                                </iframe>
 
-                                <div class="mapouter"><div class="gmap_canvas"><iframe width="1480" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=The%20Jorac%20Hotel%20Kiritiri&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://yt2.org"></a><br>
-                                          <style>.mapouter{
-                                                  position:relative;
-                                                  text-align:right;
-                                                  height:350px;
-                                                  width:1480px;
-                                        }
-                                      </style>
+                                            <a href="https://yt2.org"></a>
+                                            <br>
+               
+                                           </div>
+                                         </div>
 
-                                        <style>
-                                        .gmap_canvas {
-                                        overflow:hidden;
-                                        background:none!important;
-                                        height:350px;
-                                        width:1480px;
-                                     }
-                               </style>
-                             </div>
-                           </div>
 
-                       </div>
-  
 
-<!-- END OF PAGE: -->
-        </body>
+                                     </div>
 
-          <footer class="footer"> 
-                          
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+ 
+
+              <!-- END OF PAGE: -->
+                    </body>
+                  </div>
+                </div>
+</body>
+
+<!-- footer ---------------->
+
+   <footer class="footer"  style="max-width:100%;">            
                 <p> All Rights Reserved &copy; 2021, JoRac Hotel Ltd.</p>
-                          
               </footer> 
 </html>

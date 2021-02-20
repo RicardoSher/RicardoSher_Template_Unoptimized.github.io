@@ -59,6 +59,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
 
 }
 
@@ -70,6 +72,7 @@ body {
   background-color: #806C8D; /*  #e066ff;  */ 
   border-radius: .5rem;
   font-size: 1.25em
+  margin-bottom:10px;
 }
 
 .main-footer {
@@ -134,12 +137,24 @@ body {
 }
 
 footer {
-  height: 20px;
-  color:    #EADDC4; /*color: #202027*/
+  height: 10px;
+  color: #EADDC4; /*color: #202027*/
   font-size: .8em;
   padding: 1em;
   border-radius: .5rem;
   text-decoration-color: none;
   padding-top: .75rem;
   text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  /*position: fixed;*/
+  
+}
+
+
+
+
+.wrapper{
+  margin-top: 40px;
 }
